@@ -1,0 +1,8 @@
+programma ar kulinarijas receptiem, kur jau ir kaut kadi parasti recepti. bus iesapeja pievienot savas recptes
+json faila bus saraksts ar:
+    1. ingredientiem
+    2. nepieciesamiem traukiem
+    3. gatavošanas instrukiju
+
+bus iespeja meklet receptus bez konkretiem ingredientiem
+bus iespeja redaktet receptus
