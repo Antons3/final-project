@@ -1,37 +1,53 @@
 import json
 
-with open('receipts.json') as json_data:
-    print(json_data)
-    print(json.load(json_data))
-
-def add_receipt(receipts):
-    pass
-
 def search_receipt_by_name(receipts):
     keyword = input("Enter part of the receipt name: ")
     found_receipts = []
     for receipt in receipts:
-        if keyword.lower() in receipt["title"].lower():
+        if keyword.lower() in receipt["receipt"].lower():
             found_receipts.append(receipt)
     if found_receipts:
-        print("Matching books:")
+        print("Matching receipts:")
         for receipt in found_receipts:
-            print(receipt['receipt'], "-", receipt['ingredients'])
+            print(receipt['receipt'], ":", receipt['ingredients'])
     else:
         print("No matching receipts found.")
 
+def add_receipt(receipts):
+    receipt = input("Enter receipt name: ")
+    ingredients = input("Enter ingredients: ")
+    instruction = input("Enter instruction: ")
+    new_receipt = {
+        "receipt": receipt,
+        "ingredients": ingredients,
+        "instruction": instruction
+    }
+    receipts.append(new_receipt)
+    print("Receipt added successfully.")
+
+def search_receipt_without_ingr(receipts):
+    keyword = input("Enter ingredient you don't have: ")
+    without_receipts = receipts.copy()
+
+    for receipt in receipts:
+        if keyword.lower() in receipt["ingredients"].lower():
+            without_receipts.remove(receipt)
+    else:
+        print("No matching receipts found.")
+    print("Matching receipts:", without_receipts)  
 try:
-    with open('receipts.json') as f:
+    with open('receipts.json', mode="r", encoding="utf-8") as f:
         receipts = json.load(f)
+        # print(receipts[0]['instruction'])
 except FileNotFoundError:
     print("Library file not found. Starting with an empty library.")
 
 while True:
     print("\nPavārgrāmata")
-    print("1. search by name")
-    print("2. add receipt")
-    print("3. search receipt without ingredient")
-    print("4. Exit")
+    print("1. Search by name")
+    print("2. Add receipt")
+    print("3. Search receipt without ingredient")
+    print("4. Save and exit")
 
     choice = input("Enter your choice: ")
 
@@ -44,12 +60,12 @@ while True:
     
 
     elif choice == "3":
-        pass
+        search_receipt_without_ingr(receipts)
 
 
     elif choice == "4":
-        # save books to file
-        with open('books.json', 'w') as f:
+        # save receipts to file
+        with open('receipts.json', 'w') as f:
             json.dump(receipts, f, indent=4)
         print("Library saved. Exiting...")
         break
