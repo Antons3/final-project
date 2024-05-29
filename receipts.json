@@ -3,20 +3,5 @@
         "receipt": "Pancakes",
         "ingredients": "flour - 2 cups, milk (can be replaced with kefir) - 3 cups, eggs - 3, sugar - 2 tea spoons, salt - 1/2 tea spoons",
         "instruction": " Diezgan liel\u0101 trauk\u0101 saku\u013c olas ar s\u0101li un cukuru, ielej 1 gl\u0101zi piena, ieber visus miltus. Samaisa un ielej p\u0101r\u0113jo pienu. Atkal \u013coti labi samaisa un cep pank\u016bkas uz vid\u0113ja lieluma cepe\u0161pannas. Kad pank\u016bkas ir gatavas var izrot\u0101t t\u0101s k\u0101 grib - ar saldaj\u0101m m\u0113rc\u0113m, sald\u0113jumu, ievar\u012bjumu. Ja v\u0113l\u0101s s\u0101\u013c\u0101s, pilda ar ga\u013cu, sieru vai ziv\u012bm."
-    },
-    {
-        "receipt": "buk",
-        "ingredients": "buk",
-        "instruction": "put buk in the oven"
-    },
-    {
-        "receipt": "cola",
-        "ingredients": "cola",
-        "instruction": "open cola and drink"
-    },
-    {
-        "receipt": "cola",
-        "ingredients": "cola",
-        "instruction": "open cola"
     }
 ]
