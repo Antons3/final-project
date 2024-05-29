@@ -10,16 +10,16 @@
  - Risinājuma demonstrācija (var arī ekrānšaviņi)
 
 ## Izstrāde
- - Kods atbilst izvirzītam prasībam
+ x- Kods atbilst izvirzītam prasībam
  - Ir ievaddatu validācija (pārbaude ka tika ierakstīti korrekti dati)
- - Mainīgie rakstīti snake_case, bez saisinājumiem
+ x- Mainīgie rakstīti snake_case, bez saisinājumiem
  - Ir komentāri pirms if, for, while kosntrukcijam
- - Kods nemet kļūdas darbības laikā
- - Izmaiņas saglabātas Github repozitorijā
- - Izmaiņas saglabātas vairākas iterācijās (vairāki commit)
- - Izmantoti saraksti vai vārdnīcas vai klases
+ x- Kods nemet kļūdas darbības laikā 
+ x- Izmaiņas saglabātas Github repozitorijā
+ x- Izmaiņas saglabātas vairākas iterācijās (vairāki commit)
+ x- Izmantoti saraksti vai vārdnīcas vai klases
  - Izmantota jebkura bibliotēka (modulis uzinstalēts ar PIP un izmantots kodā) 
- - Izmantoti JSON faili vai SQLite datubāze datu glabāšanai
+ x- Izmantoti JSON faili vai SQLite datubāze datu glabāšanai
 
 ## Testēšana
 

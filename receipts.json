@@ -8,5 +8,15 @@
         "receipt": "buk",
         "ingredients": "buk",
         "instruction": "put buk in the oven"
+    },
+    {
+        "receipt": "cola",
+        "ingredients": "cola",
+        "instruction": "open cola and drink"
+    },
+    {
+        "receipt": "cola",
+        "ingredients": "cola",
+        "instruction": "open cola"
     }
 ]

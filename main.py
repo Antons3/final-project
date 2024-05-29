@@ -9,7 +9,7 @@ def search_receipt_by_name(receipts):
     if found_receipts:
         print("Matching receipts:")
         for receipt in found_receipts:
-            print(receipt['receipt'], ":", receipt['ingredients'])
+            print(receipt['receipt'], ": ingredients:   ", receipt['ingredients'], "; instruction:   ", receipt['instruction'])
     else:
         print("No matching receipts found.")
 
@@ -32,8 +32,6 @@ def search_receipt_without_ingr(receipts):
     for receipt in receipts:
         if keyword.lower() in receipt["ingredients"].lower():
             without_receipts.remove(receipt)
-    else:
-        print("No matching receipts found.")
     print("Matching receipts:", without_receipts)  
 try:
     with open('receipts.json', mode="r", encoding="utf-8") as f:
@@ -67,7 +65,7 @@ while True:
         # save receipts to file
         with open('receipts.json', 'w') as f:
             json.dump(receipts, f, indent=4)
-        print("Library saved. Exiting...")
+        print("Receipts saved. Exiting...")
         break
 
     else:
